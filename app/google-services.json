@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "673419904277",
+    "firebase_url": "https://reminder-87929.firebaseio.com",
+    "project_id": "reminder-87929",
+    "storage_bucket": "reminder-87929.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673419904277:android:3115521a1f9a44f8",
+        "android_client_info": {
+          "package_name": "com.apps.harshal.reminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673419904277-r44tqqumol2i81b84rtosu499gsk7ijv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.harshal.reminder",
+            "certificate_hash": "716e74cf1629514bf4ad4bfe0503af41d61a1bc5"
+          }
+        },
+        {
+          "client_id": "673419904277-7ldb3fnolchoph2pfh40abqg19f7l4di.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcYcdwpL6cU6B9ewxOzkPGnKAnK3vIJEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673419904277-7ldb3fnolchoph2pfh40abqg19f7l4di.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
