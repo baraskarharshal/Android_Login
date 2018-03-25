@@ -75,10 +75,17 @@ public class ProfileActivity extends AppCompatActivity{
             String last_name = inBundle.get("last_name").toString();
             String email = inBundle.get("email").toString();
             String id = inBundle.get("id").toString();
+            String gender = inBundle.get("gender").toString();
+            String age_range = inBundle.get("age_range").toString();
             //String imageUrl = inBundle.get("imageUrl").toString();
 
             userEmail.setText("Welcome " + email );
-            userName.setText("Welcome " + first_name + " " + last_name );
+            userName.setText("first_name:" + first_name +
+                     "\nlast_name:" + last_name +
+                    "\nemail:" + email +
+                    "\ngender:" + gender+
+                    "\nage_range:" + age_range
+            );
         }
 
         // Log out button listener

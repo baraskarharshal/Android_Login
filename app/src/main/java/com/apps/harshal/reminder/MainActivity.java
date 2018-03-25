@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
 
                 Bundle parameters = new Bundle();
-                parameters.putString("fields", "first_name, last_name, email, id");
+                parameters.putString("fields", "first_name, last_name, email, id, gender, age_range");
                 graphRequest.setParameters(parameters);
                 graphRequest.executeAsync();
 
@@ -152,18 +152,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // Facebook sign in method
 
     public void displayUserInfo(JSONObject object){
-        String first_name, last_name, email, id;
+        String first_name, last_name, email, id, gender, age_range;
         try {
             first_name = object.getString("first_name");
             last_name = object.getString("last_name");
             email = object.getString("email");
             id = object.getString("id");
+            gender = object.getString("gender");
+            age_range = object.getString("age_range");
 
             Intent main = new Intent(MainActivity.this, ProfileActivity.class);
             main.putExtra("first_name", first_name);
             main.putExtra("last_name", last_name);
             main.putExtra("email", email);
             main.putExtra("id", id);
+            main.putExtra("gender", gender);
+            main.putExtra("age_range", age_range);
             startActivity(main);
 
             Toast.makeText(getApplicationContext(), "Fb Sign In successfull!."+ first_name +last_name +email + id,Toast.LENGTH_SHORT).show();
